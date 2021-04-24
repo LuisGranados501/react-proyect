@@ -1,0 +1,43 @@
+Microsoft Windows [Version 10.0.19041.804]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\lgranados>cd C:\Isthmus\nodeReactTraining\2021
+
+> crear proyecto react
+C:\Isthmus\nodeReactTraining\2021>npx create-react-app proyecto-frontend
+npx: installed 67 in 13.349s
+
+Creating a new React app in C:\Isthmus\nodeReactTraining\2021\proyecto-frontend.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+> ingresar a la carpeta del proyecto
+C:\Isthmus\nodeReactTraining\2021>cd proyecto-frontend
+
+> levanta el visual studio code
+C:\Isthmus\nodeReactTraining\2021\proyecto-frontend>code .
+
+> para trabajar con el paquete de diseño con material
+PS C:\Isthmus\nodeReactTraining\2021\proyecto-frontend> npm install @material-ui/core
+
+> para el enrutamiento web
+PS C:\Isthmus\nodeReactTraining\2021\proyecto-frontend> npm i --save react-router-dom
+
+> para consumir el api del backend
+PS C:\Isthmus\nodeReactTraining\2021\proyecto-frontend> npm install axios
+
+> levantar proyecto frontend
+PS C:\Isthmus\nodeReactTraining\2021\proyecto-frontend> npm start
+
+> para detener la ejecucion del app
+> CTRL + C
+PS C:\Isthmus\nodeReactTraining\2021\proyecto-frontend> ^C
+
+> tutoriales:
+> axios:            https://www.npmjs.com/package/axios
+> material-react:   https://material-ui.com/getting-started/installation/
+> prime-react:      https://www.primefaces.org/primereact/
+> bootstrap-react:  https://react-bootstrap.github.io/getting-started/introduction
+> Extra para navegar a otra pagina en REACT desde una funcion (de manera programada):
+> https://stackoverflow.com/questions/31079081/programmatically-navigate-using-react-router

@@ -1,0 +1,68 @@
+Microsoft Windows [Version 10.0.19041.572]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\lgranados>cd C:\Isthmus\nodeReactTraining
+C:\Isthmus\nodeReactTraining>mkdir proyecto-backend
+C:\Isthmus\nodeReactTraining>cd proyecto-backend
+C:\Isthmus\nodeReactTraining\proyecto-backend>code .
+
+PS C:\Isthmus\nodeReactTraining\proyecto-backend> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (proyecto-backend)
+version: (1.0.0)
+description: Proyecto Node-React
+git repository: https://github.com/lgranadosIst/nodeReactTraining
+keywords:
+author: Luis Granados
+license: (ISC)
+About to write to C:\Isthmus\nodeReactTraining\proyecto-backend\package.json:
+
+{
+  "name": "proyecto-backend",
+  "version": "1.0.0",
+  "description": "Proyecto Node-React",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Granados",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgranadosIst/nodeReactTraining.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lgranadosIst/nodeReactTraining/issues"
+  },
+  "homepage": "https://github.com/lgranadosIst/nodeReactTraining#readme"
+}
+
+Is this OK? (yes)
+> para el manejo de mysql
+PS C:\Isthmus\nodeReactTraining\proyecto-backend> npm i express
+PS C:\Isthmus\nodeReactTraining\proyecto-backend> npm install mysql
+PS C:\Isthmus\nodeReactTraining\proyecto-backend> npm install mysql-async-simple
+> para el manejo de json
+PS C:\Isthmus\nodeReactTraining\proyecto-backend> npm install stringinject
+> para cuando el navegador indica problemas de cors (como que si las apps estuviesen en ambientes diferentes)
+PS C:\Isthmus\nodeReactTraining\proyecto-backend> npm install cors
+> para levantar el backend-node-js
+PS C:\Isthmus\nodeReactTraining\proyecto-backend> node app.js
+
+> note: el route debe ir justo antes del llamado al listen (de lo contrario da problemas):
+app.use('/contacts', require('./routes/contact_routes'));
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`)
+});
+
+
+
