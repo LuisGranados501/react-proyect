@@ -1,0 +1,15 @@
+# node.js
+node_modules/
+npm-debug.log
+
+# binaries
+bin/
+dist/
+lib/
+
+# editors
+*.swp
+.idea/
+.vs/
+.vscode/
+.DS_Store
