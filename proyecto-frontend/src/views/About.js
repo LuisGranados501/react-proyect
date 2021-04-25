@@ -5,6 +5,7 @@ import image from '../images/code.jpg';
 import Card from '@material-ui/core/Card';
 import Photo from '../images/LuisGranados.jpg';
 import logo from '../logo.svg';
+
 <img src={logo} className="App-logo img" alt="logo" />
 
 const styles  = makeStyles((theme) => ({
@@ -13,15 +14,17 @@ const styles  = makeStyles((theme) => ({
     avatar: { marginLeft: 200 }
   }));
 
+  
 function About(props) {
     return (
-        <Card style={{ maxWidth: 800, margin: 15 }}>
+        <Card className="card-home">
             <div className="App">
                 <div className="logo">
                     <img src={logo} className="App-logo img" alt="logo..." />
                     <img src={image} width="300px" alt="about..."/>
                 </div>
-                <div style={styles.wrapper}>
+                <div className="wrapper-about-head">
+
                     <div className="title">Proyecto React</div>
                     <div className="img-about">
                         <Avatar src={Photo} className={styles.large}  alt="Luis Granados..." />

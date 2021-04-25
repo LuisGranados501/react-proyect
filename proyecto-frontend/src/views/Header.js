@@ -1,5 +1,8 @@
+import '../App.css';
 import { Link } from "react-router-dom";
 import image from '../images/3pillar.jpg';
+import Clock from './Clock';
+
 
 function Header(props) {
     return (
@@ -14,6 +17,9 @@ function Header(props) {
                         <li><Link to="/contact">Contact</Link></li>
                         <li><Link to="/about">About</Link></li>
                     </ul>
+                    <div className="clock">
+                        <Clock />
+                    </div>
                 </nav>
             </div>
         </div>

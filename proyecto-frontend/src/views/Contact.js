@@ -16,8 +16,6 @@ import PersonIcon from '@material-ui/icons/Person';
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Call';
 import Avatar from '@material-ui/core/Avatar';
-//import PhoneInput from 'react-phone-input-2';
-//import 'react-phone-input-2/lib/style.css';
 
 const styles = makeStyles((theme) => ({
   large: {
@@ -106,7 +104,7 @@ class Contact extends React.Component {
   render(){
     return(  
       <div className="contact-form">
-      <Card style={{ maxWidth: 450, height:450, marginTop:15, marhginLeft:5, textAlign: "center", background: "whitesmoke" }}>
+      <Card style={{ maxWidth: 450, height:450, marginTop:15, marhginLeft:5, textAlign: "center", background: "rgb(215 221 228)" }}>
         <div className="App">
           <div className="title inline">{labels.title}</div>
           <div className="avatar avatar-wrapper">
@@ -193,3 +191,5 @@ export default withRouter(Contact);
 //Material:
 //          https://material-ui.com/
 //          https://material-ui.com/es/getting-started/usage/
+//Tabs:
+//          https://agustinmulet.github.io/reactworkshop/intro
